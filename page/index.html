@@ -1,0 +1,112 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: index.php");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerionix</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background-image: url('aircraft.jpg'); 
+            background-size:cover ;
+            background-position: center;
+            background-repeat: no-repeat; 
+          }
+         
+    a {
+        color: #32e0f3;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        background: rgba(13, 113, 147, 0.67);
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        text-align: center;
+    }
+
+    a:hover {
+        color: #ffffff;
+        background: linear-gradient(90deg, #00ffcc, #007bff);
+        border-color: #00ffff;
+        box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffcc;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <header style="cursor: pointer;" onclick="location.href='..\\aviation_management_system\\index.php';">
+            <h1>Welcome to Aerionix International</h1>
+        <p> Managing Aerionix airline operations.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="aircraft.php">Aircraft</a></li>
+            <li><a href="airport.php">Airport</a></li>
+            <li><a href="baggage.php">Baggage</a></li>
+            <li><a href="..\aviation_management_system\bookings.php">Bookings</a></li>
+            <li><a href="catering.php">Catering</a></li>
+            <li><a href="checkin.php">CheckIn</a></li>
+            <li><a href="crew.php">Crew</a></li>
+            <li><a href="flight_crew.php">Flight Crew</a></li>
+            <li><a href="flight.php">Flights</a></li>
+            <li><a href="flight_stats.php">Flight Stats</a></li>
+             <li><a href="fuel.php">Fuel Details</a></li>
+            <li><a href="maintenance.php">Flight's Maintenance</a></li>
+            <li><a href="passengers.php">Passengers</a></li>
+            <li><a href="routes.php">Routes</a></li>
+            <li><a href="schedules.php">Flight Schedules</a></li>
+            
+            
+        </ul>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h2>Database Overview</h2>
+            <p>This project includes the following tables:</p>
+            <ul class="table-list">
+                <li><strong>Aircraft:</strong> Details about aircraft including model, capacity, and more.</li>
+                <li><strong>Airports:</strong>Lists airports with their code, name, city, and country.</li>
+                <li><strong>Baggage:</strong> Baggage details associated with each flight and passenger.</li>
+                <li><strong>Bookings:</strong> Booking statuses and details for each passenger.</li>
+                <li><strong>Catering:</strong>Stores catering information for flights, including menu and date.</li>
+                <li><strong>Checkin:</strong>Captures passenger check-in records with time and flight information.</li>
+                <li><strong>Crew:</strong> Information about crew members, their roles, and associated flights.</li>
+                <li><strong>Flight Crew:</strong>Tracks crew assignments to specific flights with their roles.</li>
+                <li><strong>Flights:</strong> Flight schedules, including departure and arrival times.</li>
+                <li><strong>Flight Schedules:</strong>Maintains flight schedules with departure and arrival times.</li>
+                <li><strong>Flight_Stats:</strong>Records flight statistics including delays and duration.</li>
+                <li><strong>Fuel Details:</strong>Tracks fuel records for each aircraft, including date and quantity.</li>
+                <li><strong>Flight Maintenance:</strong>Logs aircraft maintenance records with dates and descriptions.</li>
+                <li><strong>Passengers:</strong> Passenger information and their bookings.</li>
+                <li><strong>Routes:</strong>Defines routes between two airports and the distance between them.</li>
+
+            </ul>
+        </section>
+
+    </main>
+    <p><a href="..\Two Factor Authentication using PHP\logout.php">Logout</a></p>
+    <footer>
+        <p>&copy; 2024 Aerionix Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>

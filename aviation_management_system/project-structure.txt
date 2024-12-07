@@ -1,0 +1,15 @@
+aviation-management/
+├── includes/
+│   ├── db_connect.php    # Database connection
+│   ├── header.php        # Common header with navigation
+│   └── footer.php        # Common footer
+├── css/
+│   └── style.css         # Any custom CSS if needed
+├── js/
+│   └── script.js         # Any JavaScript if needed
+├── index.php             # Dashboard/Home page
+├── aircraft.php          # Aircraft CRUD
+├── airports.php          # Airports CRUD
+├── flights.php           # Flights CRUD
+├── passengers.php        # Passengers CRUD
+└── crew.php              # Crew CRUD

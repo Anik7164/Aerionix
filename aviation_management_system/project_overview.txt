@@ -1,0 +1,13 @@
+Project Objective:
+ This project aims to design and develop a comprehensive aviation management system. The system will manage flight operations, including aircraft information, crew profiles, flight schedules, passenger bookings, and maintenance records.
+
+    • Functionalities:
+    1. Aircraft Management: The system will store and manage information about the aircraft fleet, including aircraft model, capacity, range, and maintenance records.
+    2. Crew Management: The system will manage crew profiles, including crew member information, role, experience, and flight assignments.
+    3. Flight Management: The system will manage flight schedules, including departure and arrival airports, departure and arrival times, and flight duration.
+    4. Passenger Management: The system will manage passenger bookings, including passenger information, seat assignments, and check-in records.
+    5. Maintenance Management: The system will manage maintenance records, including maintenance dates, descriptions, and fuel consumption.
+    6. Catering Management: The system will manage catering records, including catering dates, menus, and passenger preferences.
+    7. Baggage Management: The system will manage baggage records, including baggage type, passenger information, and flight assignments.
+    8. Check-in Management: The system will manage check-in records, including check-in times, passenger information, and flight assignments.
+    9. Flight Statistics: The system will generate flight statistics, including departure and arrival delays, flight duration, and passenger satisfaction ratings.
